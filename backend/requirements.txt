@@ -1,0 +1,30 @@
+# ---------- FastAPI Core ----------
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+# ---------- Environment ----------
+python-dotenv==1.0.1
+
+# ---------- Database & ORM ----------
+sqlalchemy==2.0.29
+psycopg2-binary==2.9.9
+alembic==1.13.1
+
+# ---------- Data Validation ----------
+pydantic==2.6.4
+pydantic-settings==2.2.1
+
+# ---------- Authentication & Security ----------
+passlib[bcrypt]==1.7.4
+python-jose==3.3.0
+
+# ---------- File Upload & Handling ----------
+python-multipart==0.0.9
+
+# ---------- AI & NLP ----------
+openai==1.14.3
+langchain==0.1.14
+tiktoken==0.6.0
+
+# ---------- Utilities ----------
+requests==2.31.0
