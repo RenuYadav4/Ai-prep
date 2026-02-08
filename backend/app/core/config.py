@@ -1,9 +1,9 @@
-from pydantic import BaseSettings #type: ignore
+from pydantic_settings import BaseSettings  #type: ignore
 
 class Settings(BaseSettings):
-    DATABASE_URl: str
+    DATABASE_URL: str
 
     class Config:
         env_file = ".env"
 
-Settings = Settings()
+settings = Settings()

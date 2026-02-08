@@ -1,10 +1,10 @@
-from sqlalchemy import Column, Integer, String, ForeignKey
-from sqlalchemy.orm import relationship
-from app.core.database import Base
+from sqlalchemy import Column, Integer, String, ForeignKey  #type: ignore
+from sqlalchemy.orm import relationship                     #type: ignore
+from app.base import Base
 
 
 class Question(Base):
-    __tablename__ = "questions"
+    __tablename__ = "answers_eva"
 
     id = Column(Integer, primary_key=True)
     question_text = Column(String, nullable=False)

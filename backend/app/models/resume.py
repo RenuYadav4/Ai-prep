@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, Text, ForeignKey   #type: ignore
 from sqlalchemy.orm import relationship  #type: ignore
-from app.models.base import Base
+from app.base import Base
 
 class Resume(Base):
     __tablename__ = "resumes"

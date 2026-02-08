@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer,String   #type: ignore
-from sqlalchem.orm import relationship #type: ignore
-from app.models.base import Base
+from sqlalchemy.orm import relationship #type: ignore
+from app.base import Base
 
 
 class Company(Base):

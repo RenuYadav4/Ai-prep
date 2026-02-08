@@ -1,10 +1,10 @@
 from sqlalchemy import Column, Integer, ForeignKey, DateTime, String  #type: ignore
 from sqlalchemy.orm import relationship #type: ignore
-from datatime import datetime  #type: ignore
-from app.core.database import Base 
+from datetime import datetime  #type: ignore
+from app.base import Base 
 
-class PreprationSession(Base):
-    __tablename__ = "prepration_sessions"
+class PreparationSession(Base):
+    __tablename__ = "preparation_sessions"
 
     id =  Column(Integer, primary_key = True)
 
@@ -15,7 +15,7 @@ class PreprationSession(Base):
 
     created_at = Column(DateTime, default = datetime.utcnow)
 
-    user = relationship("User", back_populates = "prepration_sessions")
+    user = relationship("User", back_populates = "preparation_sessions")
     company = relationship("Company", back_populates="preparation_sessions")
 
     questions = relationship(
