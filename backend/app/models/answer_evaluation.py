@@ -3,7 +3,7 @@ from sqlalchemy.orm import relationship                     #type: ignore
 from app.base import Base
 
 
-class Question(Base):
+class AnswerEva(Base):
     __tablename__ = "answers_eva"
 
     id = Column(Integer, primary_key=True)
